@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Pruebas Node.Js",
   "main": "app.js",
+  "engines":{
+        "node":"14 px"
+      },
   "scripts": {
     "start": "node index.js"
   },

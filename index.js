@@ -1,11 +1,14 @@
 const express = require('express')
 const app = express()
 
-app.use(express.json())
+const PORT = process.env.PORT || 3000
 
-app.get('/', function (req, res) {
-    res.send('Hola Mundo! :D Prueba 2')
-  })
+app.listen(PORT,() => console.log("Servidor esta en otro puerto ${PORT}"))
 
 
-app.listen(3000)
+
+//app.use(express.json())
+//app.get('/', function (req, res) {
+//   res.send('Hola Mundo! :D Prueba 2')
+//  })
+//app.listen(3000)
